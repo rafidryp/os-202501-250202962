@@ -115,7 +115,8 @@ pstree -p | head -20
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+![Screenshot hasil](./screenshots/Screenshot%202025-11-04%20232834.png)
+
 
 ---
 
