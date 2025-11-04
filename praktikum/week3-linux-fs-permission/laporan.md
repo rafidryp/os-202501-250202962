@@ -1,5 +1,5 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu [3]
 Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
@@ -32,9 +32,89 @@ Jenis-jenis system call yang umum digunakan (file, process, device, communicatio
 
 ## Langkah Praktikum
 1. Langkah-langkah yang dilakukan.  
+
+   1. set up environment
+   2. lakukan langkah langkah untuk melakukan eksperimen
+   3. ambil screenshoot hasil percobaan lalu up ke link pada visual code
+   4. commit dan push (upload tugas) lewat visual code
+
 2. Perintah yang dijalankan.  
+   Penjelasan perintah (urut sesuai input)
+
+pwd
+
+Fungsi: Menampilkan present working directory — path direktori saat ini.
+Contoh output: /home/yuda
+Catatan: Berguna untuk memastikan di mana kamu berada sebelum menjalankan perintah lain.
+
+ls -l
+
+Fungsi: Menampilkan daftar file/ direktori di direktori saat ini dengan format panjang (long listing). Menunjukkan mode/permission, jumlah link, pemilik, grup, ukuran (byte), tanggal/waktu terakhir dimodifikasi, dan nama file.
+Contoh kolom penting: -rw-r--r-- 1 yuda users 1234 Oct 31 14:00 file.txt
+cd /tmp
+Fungsi: Pindah (change directory) ke direktori /tmp.
+Catatan: /tmp biasanya direktori untuk file sementara — sering memiliki izin publik (world-writable) dan dibersihkan berkala.
+
+ls -a
+
+Fungsi: Menampilkan semua entri di direktori, termasuk file tersembunyi yang namanya diawali titik (.), serta . (current dir) dan .. (parent dir).
+Catatan: Gunakan bila ingin melihat file konfigurasi/tersembunyi.
+cat /etc/passwd | head -n 5
+Fungsi gabungan:
+cat /etc/passwd membaca isi file /etc/passwd (daftar akun sistem).
+| (pipe) mengalirkan output cat ke perintah berikutnya.
+head -n 5 menampilkan 5 baris pertama dari input.
+Hasil:melihat 5 entri pertama dari /etc/passwd.
+Catatan keamanan: /etc/passwd pada sistem modern tidak menyimpan password terenkripsi (itu di /etc/shadow) — tapi berisi informasi akun (username, uid, gid, home, shell). Perintah ini aman untuk dilihat oleh pengguna biasa.
+
+echo "Hello <Rafid Raihan Yuda Permana><250202962>" > percobaan.txt
+
+Fungsi:
+
+echo "Hello <Rafid Raihhan Yuda Permana><250202962>" mencetak teks Hello <Rafid Raihan Yuda Permana>><250202962> ke stdout.
+
+> mengalihkan (redirect) stdout ke file percobaan.txt, membuat file baru atau menimpa file yang sudah ada.
+
+Hasil: File percobaan.txt dibuat (atau ditimpa) berisi baris Hello <NAME><NIM>.
+Catatan penting: Karena teks dibungkus tanda kutip ganda ("), tanda < tidak diperlakukan sebagai redirection. Jika kamu menulis tanpa kutip, shell bisa salah mengartikan < sebagai redirection input.
+Alternatif: Untuk memasukkan nilai variabel, bisa gunakan echo "Hello $NAME $NIM" > percobaan.txt (jika variabel sudah di-set)
+ls -l percobaan.txt
+Fungsi: Menampilkan informasi file percobaan.txt dalam format panjang — memperlihatkan permission, ukuran (bytes), pemilik, timestamp.
+Contoh output: -rw-r--r-- 1 yuda users 18 Oct 31 14:05 percobaan.txt (angka ukuran bergantung isi)
+chmod 600 percobaan.txt
+Fungsi: Mengubah permission file percobaan.txt menggunakan notasi oktal 600.
+Penjelasan 600:
+Owner: 6 => read + write (rw-)
+Group: 0 => --- (tidak ada izin)
+Others: 0 => ---
+Jadi hasil: -rw------- (hanya pemilik yang dapat baca & tulis).
+Gunanya: Membatasi akses supaya hanya pemilik yang bisa membaca/menulis — berguna untuk file yang sensitif.
+
+ls -l percobaan.txt (lagi)
+
+Fungsi: Memeriksa hasil perubahan permission. Sekarang harus menampilkan -rw------- di kolom permission.
+
 3. File dan kode yang dibuat.  
+
+pwd
+ls -l
+cd /tmp
+ls -a
+
+cat /etc/passwd | head -n 5
+
+echo "Hello <NAME><NIM>" > percobaan.txt
+(di isi sesuai nama dan nim)
+ls -l percobaan.txt
+chmod 600 percobaan.txt
+ls -l percobaan.txt
+
+
 4. Commit message yang digunakan.
+
+git add .
+git commit -m "Minggu 3 - Linux File System & Permission"
+git push origin main
 
 ---
 
@@ -134,7 +214,9 @@ Perbedaannya: chown mengatur kepemilikan (ownership), sedangkan chmod mengatur i
 ## Refleksi Diri
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini?  
+jaringan yang membuat proses akses web terhalang
 - Bagaimana cara Anda mengatasinya?  
+mencari tempat dengan jaringan yang lebih baik
 
 ---
 
