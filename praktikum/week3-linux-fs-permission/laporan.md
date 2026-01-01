@@ -141,7 +141,8 @@ ls -l percobaan.txt
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](./screenshots/Screenshot%202025-10-21%20203337.png)
+![Screenshot hasil](./screenshots/Screenshot%202025-11-07%20000258.png)
+! [Screenshot hasil](./screenshots/Screenshot%202025-11-07%20000720.png)
 
 ---
 

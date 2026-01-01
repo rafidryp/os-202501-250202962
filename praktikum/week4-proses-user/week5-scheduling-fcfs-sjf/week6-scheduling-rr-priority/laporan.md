@@ -1,20 +1,22 @@
 
-# Laporan Praktikum Minggu [X]
+# Laporan Praktikum Minggu [6]
 Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : Rafid Raihan Yuda Permana
+- **NIM**   : 250202962
+- **Kelas** : 1IKRB
 
 ---
 
 ## Tujuan
 Tuliskan tujuan praktikum minggu ini.  
 Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+>  Penjadwalan CPU – Round Robin (RR) dan Priority Scheduling
+
+Mahasiswa akan melakukan simulasi perhitungan manual untuk menghitung waiting time dan turnaround time, serta menganalisis efek perbedaan time quantum dan prioritas terhadap performa CPU scheduling.
 
 ---
 
