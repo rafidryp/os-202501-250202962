@@ -5,9 +5,9 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 ---
 
 ## Identitas
-- **Nama**  : Rafid Raihan Yuda Permana
-- **NIM**   : 250202962  
-- **Kelas** : 1IKRB
+- **Nama**  : [Nama Mahasiswa]  
+- **NIM**   : [NIM Mahasiswa]  
+- **Kelas** : [Kelas]
 
 ---
 
