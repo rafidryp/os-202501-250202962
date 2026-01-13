@@ -12,7 +12,7 @@ Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
+Tuliskan tujuan praktikum minggu ini.
 Contoh:  
 >  Penjadwalan CPU – Round Robin (RR) dan Priority Scheduling
 
