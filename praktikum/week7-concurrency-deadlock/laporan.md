@@ -158,7 +158,7 @@ Tidak circular wait karena filosof 4 selalu ambil fork 4 dulu, sedangkan yang la
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](/screenshots/WhatsApp%20Image%202025-12-10%20at%2016.11.08.jpeg)
+![Screenshot hasil](/screenshots/deadlock.jpeg)
 
 ---
 
